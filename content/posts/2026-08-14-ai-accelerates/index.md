@@ -90,15 +90,17 @@ The road has a second problem, and it's a different kind. Its surface is the tec
 
 And that's where accountability finally lands at the right altitude. What is external to the driver is internal to the system owner. The lights aren't laws of physics; someone chose them. And often the people telling teams to "go faster with AI" are the same people who control the constraints preventing it. That isn't a complaint — it hands the fix to the people who can actually make it.
 
-## Two teams, one root cause
+## Three teams, one root cause
 
-Two situations I've seen more than once, at different companies and in different years, make it concrete. Neither is about any one place I've worked — both are patterns that have repeated often enough to recognize on sight.
+Three situations I've seen more than once, at different companies and in different years, make it concrete. None is about any one place I've worked — all are patterns that have repeated often enough to recognize on sight.
 
 The first is a legacy codebase, waiting to be migrated, that has almost no self-testing code. AI will happily accelerate the _output_ — translate modules, restructure, generate. But with no test harness, every generated change has to be validated by hand. In cybernetic terms the control loop is missing: you can't sense whether the output is correct, so you can't steer. The team is drifting toward chaos — lots of motion, no feedback.
 
 The second is a distributed monolith with hand-offs everywhere: engineer to QA, team to team, and engineering to a separate Ops function because the teams don't run what they build. AI speeds up the coding station, and the work simply arrives at each red light faster and queues. That's Kingman under load — near-saturated stations, waiting time climbing non-linearly. The team is frozen by structure.
 
-One team blocked by a missing feedback loop, the other by unmanaged queues. Same root cause: the system wasn't prepared for acceleration. Two faces of it — and I've seen both more than once.
+The third is a team stopped dead before the work can even begin — or in the middle of it — by an external dependency: access to an ERP system whose data they need, a database server IT still has to provide, or the knowledge of another team. This isn't validated work queueing up behind generated code; the work hasn't started. AI could write every line of the integration in minutes, but it can't supply another team's understanding of their own data model — and until the access and the answers arrive, nothing changes about when the project gets to move. Kingman doesn't even apply here, because the wait isn't load-dependent — it's structural. Goldratt's playbook says elevate the constraint [5], but this team can't: from where they sit, the bottleneck isn't theirs to touch. It's one of the red lights from earlier in this piece, experienced from inside the car.
+
+One team blocked by a missing feedback loop, one by unmanaged queues, one by a constraint it isn't allowed to elevate. Same root cause: the system wasn't prepared for acceleration. Three faces of it — and I've seen all of them more than once.
 
 ## If you recognize yourself: repair the system, with AI
 
