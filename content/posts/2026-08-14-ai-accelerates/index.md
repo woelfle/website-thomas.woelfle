@@ -94,7 +94,7 @@ And that's where accountability finally lands at the right altitude. What is ext
 
 Three situations I've seen more than once, at different companies and in different years, make it concrete. None is about any one place I've worked — all are patterns that have repeated often enough to recognize on sight.
 
-The first is a legacy codebase, waiting to be migrated, that has almost no self-testing code. AI will happily accelerate the _output_ — translate modules, restructure, generate. But with no test harness, every generated change has to be validated by hand. In cybernetic terms the control loop is missing: you can't sense whether the output is correct, so you can't steer. The team is drifting toward chaos — lots of motion, no feedback.
+The first is a legacy system, waiting to be migrated, that has almost no self-testing code. AI will happily accelerate the _output_ — translate modules, restructure, generate. But with no test harness, every generated change has to be validated by hand. In cybernetic terms the control loop is missing: you can't sense whether the output is correct, so you can't steer. The team is drifting toward chaos — lots of motion, no feedback.
 
 The second is a distributed monolith with hand-offs everywhere: engineer to QA, team to team, and engineering to a separate Ops function because the teams don't run what they build. AI speeds up the coding station, and the work simply arrives at each red light faster and queues. That's Kingman under load — near-saturated stations, waiting time climbing non-linearly. The team is frozen by structure.
 
